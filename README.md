@@ -2,7 +2,7 @@
 
 ## How to visualize the project
 
-[Click here: app-pokeapi-vue.netlify.app](https://app-pokeapi-vue.netlify.app/)
+[app-pokeapi-vue.netlify.app](https://app-pokeapi-vue.netlify.app/)
 
 
 
