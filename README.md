@@ -2,24 +2,9 @@
 
 ## How to visualize the project
 
-## Customize configuration
+[Click here: app-pokeapi-vue.netlify.app](https://app-pokeapi-vue.netlify.app/)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
