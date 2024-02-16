@@ -21,10 +21,15 @@ getData()
 </script>
 
 <template>
-    <h1>Pokemons</h1>
-    <ul>
-      <li v-for="poke in pokemons">
-        <router-link :to="`/pokemons/${poke.name}`"> {{ capitalize(poke.name) }}</router-link>
-      </li>
-    </ul>
+    <div class="container flex flex-col gap-10">
+    <h1 class="text-5xl font-semibold text-center">Pokemons</h1>
+    <p class="text-center">Click on a Pokemon to see more details</p>
+      <div class="flex flex-row justify-center w-75 mx-auto">
+        <ul class="flex flex-row justify-center gap-10 flex-wrap ">
+          <li v-for="poke in pokemons" class="button">
+            <router-link :to="`/pokemons/${poke.name}`"> {{ capitalize(poke.name) }}</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
 </template>

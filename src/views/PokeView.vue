@@ -29,7 +29,17 @@ getData()
 </script>
 
 <template>
-    <img :src="poke.sprites?.front_default" alt="">
-    <h1>Pokemon name: {{ capitalize(route.params.name) }}</h1>
-    <button @click="back">Return</button>
+    <img class="w-32 h-auto" :src="poke.sprites?.front_default" alt="">
+    <h1 class="text-3xl"><span class="font-bold">Pokemon Name:</span> {{ capitalize(route.params.name) }}</h1>
+    <h2 class="text-2xl"><span class="font-bold">ID:</span> {{ poke.id }}</h2>
+    <h2 class="text-2xl"><span class="font-bold">Height:</span> {{ poke.height }}</h2>
+    <h2 class="text-2xl"><span class="font-bold">Weight:</span> {{ poke.weight }}</h2>
+    <div class="flex flex-row items-center gap-5">
+        <h2 class="text-2xl"><span class="font-bold">Abilities:</span></h2>
+        <ul class="flex flex-row gap-5">
+            <li class="text-2xl" v-for="ability in poke.abilities" :key="ability.ability.name">{{ capitalize(ability.ability.name) }}</li>
+        </ul>
+
+    </div>
+    <button class="button" @click="back">Return</button>
 </template>

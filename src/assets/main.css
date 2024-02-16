@@ -6,8 +6,16 @@ body {
   height: 100vh;
 }
 
-main {
-  height: calc(100vh - 88px);
+@media (min-width: 813px) {
+    main {
+        height: calc(100vh - 88px);
+      }
+}
+
+@media (max-width: 812px) {
+    .main__div {
+        padding: 3rem 0;
+      }
 }
 
 .button {
@@ -20,4 +28,8 @@ main {
 
 .button:hover {
   background-color: #095e0d;
+}
+
+.w-75 {
+  width: 75%;
 }

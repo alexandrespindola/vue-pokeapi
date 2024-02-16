@@ -26,7 +26,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <main class="bg-grey-300 flex flex-col items-center justify-center p-10">
-    <div class="container bg-green-200 flex flex-col items-center justify-center h-full rounded-xl gap-10">
+    <div class="main__div container main__div bg-green-200 flex flex-col items-center justify-center h-full rounded-xl gap-10 ">
       <RouterView />
     </div>
   </main>
