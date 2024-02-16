@@ -14,7 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
         </RouterLink>
         <div class="flex flex-row gap-5">
           <RouterLink to="/pokemons" class="button transition-all ease-in-out duration-500 flex flex-row items-center gap-3">Pokemons</RouterLink>
-          <a href="/">
+          <a href="https://github.com/alexandrespindola/vue-pokeapi" target="_blank" >
             <button class="button transition-all ease-in-out duration-500 flex flex-row items-center gap-3">
               <i class="fab fa-github text-2xl"></i>
               Code
